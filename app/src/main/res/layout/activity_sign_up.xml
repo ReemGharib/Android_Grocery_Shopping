@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpActivity"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="170dp"
+            android:id="@+id/welcomeTxt"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108px"
+            android:text="Welcome user"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/circle_photo"
+        tools:ignore="MissingConstraints"
+        android:layout_alignParentRight="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/uploaded_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="86 x 86"
+            android:layout_centerInParent="true"
+            android:textColor="@color/steel"
+            android:textSize="17dp"
+            android:id="@+id/text_size_photo"></TextView>
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:background="@drawable/green_circle"
+            android:layout_alignParentRight="true"
+            android:id="@+id/upload_image">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/ic_plus"
+                android:scaleType="centerCrop">
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/signupTxt"
+            android:textColor="@color/gray1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16px"
+            app:layout_constraintTop_toBottomOf="@id/welcomeTxt"
+            android:text="Sign up to join"></TextView>
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            app:layout_constraintTop_toBottomOf="@+id/signupTxt"
+            android:text="Name"
+            android:textColor="@color/gray2"></TextView>
+
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/signUp_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:layout_marginTop="8px"
+            app:layout_constraintTop_toBottomOf="@+id/nameTxt"
+            ></EditText>
+
+        <TextView
+            android:id="@+id/emailTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36px"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_et_name"
+            android:text="Email"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <EditText
+            android:id="@+id/email_txt"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:text="hey@janny"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_et_email"
+            ></EditText>
+
+    <TextView
+        android:id="@+id/passTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36px"
+        android:text="Password"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <EditText
+        android:id="@+id/signUp_et_pass"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/passTxt"
+        android:layout_marginTop="8px"
+        android:password="true"
+        android:text="99349499595iitj"
+        ></EditText>
+
+        <Button
+            android:id="@+id/signUp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_btn"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:layout_marginTop="24px"
+            app:layout_constraintTop_toBottomOf="@+id/pass_txt"></Button>
+
+            <TextView
+                android:id="@+id/haveAccTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have an account? Sign in"
+                android:layout_gravity="center"
+                android:layout_marginTop="120px"
+                app:layout_constraintTop_toBottomOf="@id/signUp_btn">
+            </TextView>
+
+</LinearLayout>

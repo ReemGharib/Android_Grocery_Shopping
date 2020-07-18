@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Success"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="16dp">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="48dp"
+            android:textColor="@color/black"
+            android:text="Success!">
+        </TextView>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/success"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="Thank you for shopping">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brownishGrey"
+            android:text="Your item has been placed and "
+            android:textSize="17dp">
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brownishGrey"
+            android:text="is on it's way to being"
+            android:textSize="17dp">
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/brownishGrey"
+            android:text="processed"
+            android:textSize="17dp">
+        </TextView>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_btn"
+        android:text="Track Order"
+        android:textColor="@color/white">
+    </Button>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back To Shop"
+        android:background="@drawable/radius_btn_vlack">
+    </Button>
+
+</LinearLayout>

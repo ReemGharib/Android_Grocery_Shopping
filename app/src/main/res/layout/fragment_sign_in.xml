@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SignInFragment"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp">
+
+    <TextView
+        android:textStyle="bold"
+        tools:ignore="Missing,MissingConstraints"
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108px"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Welcome back"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:id="@+id/welcomeTxt"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/signintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16px"
+        android:text="Sign in to continue"
+        android:textColor="@color/gray1"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTxt"></TextView>
+
+    <TextView
+        android:id="@+id/usernameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40px"
+        android:text="Username"
+        android:textColor="@color/gray2"
+        app:layout_constraintTop_toBottomOf="@id/signintxt"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/username_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8px"
+        android:text="johndoe@mail.com"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTxt"
+        app:layout_constraintEnd_toEndOf="parent"></EditText>
+
+    <TextView
+        android:id="@+id/passTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="24px"
+        app:layout_constraintTop_toBottomOf="@id/username_txt"
+        android:textColor="@color/gray2"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9px"
+        app:layout_constraintTop_toBottomOf="@id/passTxt"
+        android:text="12345678"
+        android:password="true">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/black"
+        android:layout_marginTop="24px"
+        app:layout_constraintTop_toBottomOf="@+id/password_txt"
+        android:id="@+id/forgot_pass_txt"></TextView>
+
+    <Button
+        android:background="@drawable/radius_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:layout_marginTop="24px"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass_txt"
+        android:id="@+id/signIn_btn"></Button>
+
+    <TextView
+        android:id="@+id/signUp_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="162px"
+        app:layout_constraintTop_toBottomOf="@+id/signIn_btn"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginRight="58dp"
+        android:layout_marginEnd="58dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Don't have an account? Sign up"
+        android:textColor="@color/gray1"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

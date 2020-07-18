@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/shop_cart_img"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/first_slide"
+            android:scaleType="fitCenter">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="category name"
+                android:id="@+id/category_name_cart"
+                android:textColor="@color/sickGreen">
+            </TextView>
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="product name"
+                android:id="@+id/prod_name_cart">
+            </TextView>
+
+            <TextView
+                android:textColor="@color/brownishGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prod_quantity_cart">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/product_price_cart"
+                    android:text="$6.20">
+                </TextView>
+            </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+             <LinearLayout
+                 android:layout_alignParentRight="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:background="@drawable/green_circle"
+                     android:layout_marginHorizontal="6dp"
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+                     android:src="@drawable/ic_minus"
+                     android:layout_alignLeft="@+id/txt"
+                     android:scaleType="fitCenter"
+                     android:padding="5dp"
+                     android:id="@+id/minus_img">
+                 </ImageView>
+
+                 <TextView
+                     android:layout_marginHorizontal="5dp"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="1"
+                     android:id="@+id/counter_quantity"></TextView>
+
+                 <ImageView
+                     android:background="@drawable/green_circle"
+                     android:id="@+id/plus_img"
+                     android:layout_marginHorizontal="10dp"
+                     android:layout_alignParentRight="true"
+                     android:layout_width="24dp"
+                     android:layout_height="24dp"
+                     android:scaleType="fitCenter"
+                     android:padding="5dp"
+                     android:src="@drawable/ic_plus">
+                 </ImageView>
+             </LinearLayout>
+         </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/paleGray">
+    </LinearLayout>
+
+</LinearLayout>
+
